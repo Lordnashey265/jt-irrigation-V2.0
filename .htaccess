@@ -1,0 +1,32 @@
+#turn Rewrite engine on
+RewriteEngine on
+
+#Rewrite for projects.php
+RewriteRule ^home home.php [NC,L]
+
+#Rewrite for register.php
+RewriteRule ^register register.php [NC,L]
+
+#Rewrite for login.php
+RewriteRule ^login login.php [NC,L]
+
+#Rewrite for login.php
+RewriteRule ^reset-credentials reset-credentials.php [NC,L]
+
+#Rewrite for news.php?u=xxxxx
+RewriteRule ^news-([0-9]+)-([0-9a-zA-Z_-]+) news-view.php?id=$1 [NC,L]
+
+#Rewrite for activities.php?u=xxxxx
+RewriteRule ^activity-([0-9]+)-([0-9a-zA-Z_-]+) activity-view.php?id=$1 [NC,L]
+
+#Rewrite for audio.php?u=xxxxx
+RewriteRule ^stream-([0-9]+) audio.php?id=$1 [NC,L]
+
+#NC makes the rule non case sensitive
+#L makes this the last rule that this specific condition will match
+
+#Rewrite for songs.php?u=xxxxx
+#RewriteRule ^songs/([0-9a-zA-Z]+) songs.php?id=$1 [NC,L]
+
+#RewriteRule ^songs.php?id=1&title=title-goes-here
+#RewriteRule ^songs/([0-9]+)/([0-9a-zA-Z_-]+) songs.php?id=$1&name=$2 [NC,L]

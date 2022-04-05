@@ -1,0 +1,38 @@
+/* fonts */
+@font-face{font-family: gothic-bold; src:url(../fonts/Gothic-B.ttf);}
+@font-face{font-family: gothic; src:url(../fonts/Gothic.ttf);}
+@font-face{font-family: ubuntu; src:url(../fonts/Ubuntu-R.ttf);}
+@font-face{font-family: impact; src:url(../fonts/Impact.ttf);}
+
+.image img{
+    width:70px;
+}
+
+.easypiechart {
+	position: relative;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	margin: 20px auto 10px auto;
+}
+
+.easypiechart .percent {
+	display: block;
+	position: absolute;
+	font-size: 26px;
+	top: 38px;
+	width: 120px;
+}
+
+.on-top{
+    position: fixed;
+    width:100%;
+    z-index:10;
+    top:0;
+}
+.card-header h5,h6{
+	font-family:gothic;
+}
+.water{
+	height:118px;
+}

@@ -1,0 +1,23 @@
+#turn Rewrite engine on
+RewriteEngine on
+
+#Rewrite for index.php
+RewriteRule ^home index.php [NC,L]
+
+#Rewrite for register.php
+RewriteRule ^register register.php [NC,L]
+
+#Rewrite for settings.php
+RewriteRule ^settings settings.php [NC,L]
+
+#Rewrite for chart.php
+RewriteRule ^analytics chart.php [NC,L]
+
+#Rewrite for add_new_admin.php
+RewriteRule ^add-admin add_new_admin.php [NC,L]
+
+#Rewrite for admin-list.php
+RewriteRule ^admin-list admin_list.php [NC,L]
+
+#Rewrite for settings.php
+RewriteRule ^settings settings.php [NC,L]
